@@ -1,5 +1,7 @@
 # TP1
 
+# IMPORTANTE: En este archivo escribir el informe  
+
 ## Uso de puertos de entrada y salida. 
 
 Utilizando un Arduino Nano (`atmega328p`), `4 LEDs` y `4 Pulsadores` se pide:
