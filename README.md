@@ -33,3 +33,32 @@ PB3 -> LED 4
 
 # INFORME:
 
+Al comienzo de todo codigo de programacion se debe de definir las `MACROS` utilizando:
+
+```C
+#define bot1 ((PIND >> 4) & 0x01)
+#define bot2 ((PIND >> 5) & 0x01)
+#define bot3 ((PIND >> 6) & 0x01)
+#define bot4 ((PIND >> 7) & 0x01)
+
+#define prender(PORT, PIN) (PORT |= 1 << PIN)
+#define apagar(PORT, PIN) (PORT &= 1 << PIN)
+```
+##  Entradas y salidas 
+
+Ahora se definiran las entradas y salidas lo cual sirven para administrar el orden del codigo y se codificaria de la siguiente manera:
+
+```C
+DDRD &= ~(1 << PD4);
+DDRD &= ~(1 << PD5);
+DDRD &= ~(1 << PD6);
+DDRD &= ~(1 << PD7);
+
+DDRB |= (1 << PB0);
+DDRB |= (1 << PB1);
+DDRB |= (1 << PB2);
+DDRB |= (1 << PB3);
+
+Asi estan 
+
+
