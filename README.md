@@ -58,7 +58,49 @@ DDRB |= (1 << PB0);
 DDRB |= (1 << PB1);
 DDRB |= (1 << PB2);
 DDRB |= (1 << PB3);
+```
+## Codigo principal
 
-Asi estan 
+```C
+while (1)
+    {
+        if (bot1 != 1)
+        {
+            prender(PORTB, 0);
+        }
+        else
+        {
+            apagar(PORTB, 0);
+        }
+        if (bot2 != 1)
+        {
 
+            prender(PORTB, 1);
+        }
+        else
+        {
+            apagar(PORTB, 1);
+        }
+        if (bot3 != 1)
+        {
+            prender(PORTB, 2);
+        }
+        else{
+            apagar(PORTB, 2);
+        }
+        if (bot4 != 1)
+        {
+            prender(PORTB, 3); 
+        }
+        else{
+            apagar(PORTB, 3);
+        }
 
+    }
+}
+```
+Bien este mismo es el codigo que nos va a permitir encender y apagar los LEDs a nuestro gusto. Como pueden observar utilizamos un `While` para ejecutar nuestro codigo de forma correcta, luego utilizamos un `if` ya que la primer condición del while se cumplió. a partir de ahora se esta ejecutando nuestro codigo, los `else`se refieren a que si no esta ocurriendo el `if`se mantiene activo.
+
+## Diagrama de Flujo
+
+Por ultimo tenemos el Diagrama de Flujo el cual explica el codigo de una forma mas simplificada.
