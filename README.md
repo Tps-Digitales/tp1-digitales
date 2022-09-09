@@ -107,3 +107,5 @@ Por ultimo tenemos el Diagrama de Flujo el cual explica el codigo de una forma m
 
 
 ![Diagrama de Flujo](diagrama.drawio.svg "Diagrama")
+
+y aqui concluye mi informe, espero que haya sido lo que esperaban.
